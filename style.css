@@ -60,9 +60,27 @@ div #b input {
     display: flex;
     flex-direction: column;
 }
+.details{
+    border: black 5px solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.details p{
+    text-align: left;
+}
+
+input{
+    background: honeydew;
+    border: black solid 1px;
+}
 form{
     display: block;
+    background: whitesmoke;
 }
+#output h2{
+    text-align: center;
+}
+
 @media (min-width: 600px) {
 header h1{
     display: block;

@@ -103,7 +103,7 @@ function contactInfo(event) {
     //get city
     let city = $("input#city").val();
     //get state
-    let state = $("input#state").val();
+    let state = $("input#state").val().slice(0, 2);
     //get zipCode
     let zipCode = $("input#zipCode").val();
     //concat names and output to p#nameOutput
