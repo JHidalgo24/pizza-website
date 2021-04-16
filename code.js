@@ -2,12 +2,14 @@ $(document).ready(function () {
     $("#tabs a").on("click", showTab)
     $("form#pizzaInfo").on("submit", pizzaMaker)
     $("form#contactInfo ").on("submit", contactInfo)
+    //changes to next page and changes tab clicked
     $("button#next1").on("click",function () {
         $("div#a").removeAttr("class").attr("class", "tab-pane")
         $("div#b").removeAttr("class").attr("class", "tab-pane active")
         $("a#a-tab").removeAttr("class").attr("class", "nav-link")
         $("a#b-tab").removeAttr("class").attr("class", "nav-link active")
     })
+    //changes to next page and changes tab clicked
     $("button#next2").on("click",function () {
         $("div#b").removeAttr("class").attr("class", "tab-pane")
         $("div#c").removeAttr("class").attr("class", "tab-pane active")
@@ -63,8 +65,8 @@ function pizzaMaker(event) {
 
     //find subtotal
     let subTotal = sizePrice + veggieSubtotal + meatSubtotal;
-    let tax = subTotal * .056;
-    let deliveryFee = 4.99;
+    let tax = subTotal * .051;
+    let deliveryFee = 2;
     let grandTotal = subTotal + tax + deliveryFee;
 
     //pizza size output
