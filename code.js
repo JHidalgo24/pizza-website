@@ -2,6 +2,18 @@ $(document).ready(function () {
     $("#tabs a").on("click", showTab)
     $("form#pizzaInfo").on("submit", pizzaMaker)
     $("form#contactInfo ").on("submit", contactInfo)
+    $("button#next1").on("click",function () {
+        $("div#a").removeAttr("class").attr("class", "tab-pane")
+        $("div#b").removeAttr("class").attr("class", "tab-pane active")
+        $("a#a-tab").removeAttr("class").attr("class", "nav-link")
+        $("a#b-tab").removeAttr("class").attr("class", "nav-link active")
+    })
+    $("button#next2").on("click",function () {
+        $("div#b").removeAttr("class").attr("class", "tab-pane")
+        $("div#c").removeAttr("class").attr("class", "tab-pane active")
+        $("a#b-tab").removeAttr("class").attr("class", "nav-link")
+        $("a#c-tab").removeAttr("class").attr("class", "nav-link active")
+    })
 });
 
 function showTab(event){
@@ -10,6 +22,8 @@ function showTab(event){
 }
 
 function pizzaMaker(event) {
+
+
     event.preventDefault();
 
     //gets size picked and price
@@ -63,13 +77,15 @@ function pizzaMaker(event) {
     //meats picked output
     $("#meatOutput").text(meatsPicked);
     //output Subtotal
-    $("#subtotalOutput").text(subTotal);
+    $("#subtotalOutput").text('$'+subTotal.toFixed(2));
     //output tax
-    $("#taxOutput").text(tax);
+    $("#taxOutput").text('$'+tax.toFixed(2));
     //output delivery fee
-    $("#deliveryOutput").text(deliveryFee);
+    $("#deliveryOutput").text('$'+deliveryFee);
     //output grandTotal
-    $("#grandTotalOutput").text(grandTotal.toFixed(2));
+    $("#grandTotalOutput").text('$'+grandTotal.toFixed(2));
+
+
 
 }
 function contactInfo(event) {
