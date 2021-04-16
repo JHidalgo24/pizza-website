@@ -14,12 +14,20 @@ header h1 {
     text-align: center;
     font-family: "Bauhaus 93";
     font-weight: bolder;
+    display: none;
+}
+header h2 {
+    text-align: center;
+    font-family: "Bauhaus 93";
+    font-weight: bolder;
+    display: none;
 }
 header{
     background: saddlebrown;
     text-align: center;
     font-family: "Bauhaus 93";
 }
+
 a{
     color: red;
     background: sandybrown;
@@ -46,6 +54,7 @@ div #b input {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 75%;
 }
 #pizzaMaker{
     display: flex;
@@ -54,5 +63,15 @@ div #b input {
 form{
     display: block;
 }
-
+@media (min-width: 600px) {
+header h1{
+    display: block;
+}
+header h2{
+    display: block;
+}
+.center{
+    width: 25%;
+}
+}
 
