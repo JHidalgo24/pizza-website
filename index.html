@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy's Pizzeria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+    <img class="center" src="images/headerimage.png" width="20%" height="auto" alt="freddy fazbear pizza header">
+    <h1>Freddy Fazbear's Pizza</h1>
+    <h2>Serving Since 1987</h2>
+    <br>
+</header>
+<div class="grid">
+<main>
+    <div class="container">
+        <nav>
+            <ul id="tabs" class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#a" class="nav-link active">Pizza Maker</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#b" class="nav-link">Location</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#c" class="nav-link">Checkout</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="tab-content">
+            <div id="a" class="tab-pane active">
+
+                <form>
+                    <h4>Size</h4>
+                    <input type="radio" name="size" id="small" data-cost="7" required checked><label for="small">&nbsp;Small - $7</label><br>
+                    <input type="radio" name="size" id="medium" data-cost="7"required><label for="small">&nbsp;Medium - $9</label><br>
+                    <input type="radio" name="size" id="large" data-cost="7"required > <label for="small">&nbsp;Large - $12</label><br>
+
+                    <h4>Crust</h4>
+                        <input type="radio" name="crustType" id="crust" required checked><label>&nbsp;Thin</label><br>
+                        <input type="radio" name="crustType" id="pan" required ><label>&nbsp;Pan</label><br>
+                        <input type="radio" name="crustType" id="glutenFree" required ><label>&nbsp;Gluten Free</label><br>
+
+                    <h4>Veggies - $1 each</h4>
+                    <input type="checkbox" id="onions" name="veggies"><label for="onions">&nbsp;Onions</label><br>
+                    <input type="checkbox" id="blackOlives" name="veggies"><label for="blackOlives">&nbsp;Black Olives</label><br>
+                    <input type="checkbox" id="greenPeppers" name="veggies"><label for="greenPeppers">&nbsp;Green Peppers</label><br>
+                    <input type="checkbox" id="pineapple" name="veggies"><label for="pineapple">&nbsp;Pineapple</label><br>
+                    <input type="checkbox" id="mushrooms" name="veggies"><label for="mushrooms">&nbsp;Mushrooms</label><br>
+                    <input type="checkbox" id="greenOlives" name="veggies"><label for="greenOlives">&nbsp;Green Olives</label><br>
+                    <input type="checkbox" id="tomatoes" name="veggies"><label for="tomatoes">&nbsp;Tomatoes</label><br>
+                    <input type="checkbox" id="jalapenos" name="veggies"><label for="jalapenos">&nbsp;Jalapenos</label><br>
+                    <h4>Meats - $1.50 each</h4>
+                        <input type="checkbox" id="pepperoni" name="meat"><label for="pepperoni">&nbsp;Pepperoni</label><br>
+                        <input type="checkbox" id="italianSausage" name="meat"><label for="italianSausage">&nbsp;Italian Sausage</label><br>
+                        <input type="checkbox" id="bacon" name="meat"><label for="bacon">&nbsp;Bacon</label><br>
+                        <input type="checkbox" id="chicken" name="meat"><label for="chicken">&nbsp;Chicken</label><br>
+                        <input type="checkbox" id="salami" name="meat"><label for="salami">&nbsp;Salami</label><br>
+                        <input type="checkbox" id="hamburger" name="meat"><label for="hamburger">&nbsp;Hamburger</label><br>
+                        <input type="checkbox" id="canadianBacon" name="meat"><label for="canadianBacon">&nbsp;Canadian Bacon</label><br>
+                        <input type="checkbox" id="steak" name="meat"><label for="steak">&nbsp;Steak</label><br>
+                    <button id="next1">Next</button>
+                    </form>
+
+            </div>
+            <div id="b" class="tab-pane">
+            <form>
+                <h1>Delivery Info</h1>
+
+                <h2>Contact Info</h2>
+                <label for="fName">First Name</label><input type="text" id="fName"><br>
+                <label for="lName">Last Name</label><input type="text" id="lName"><br>
+                <label for="number">Phone Number</label><input type="text" id="number"><br>
+
+                <h2>Delivery Location</h2>
+                <label for="address">Address</label><input type="text" id="address"><br>
+                <label for="apt">Apt/Suite #</label><input type="text" id="apt"><br>
+                <label for="city">City</label><input type="text" id="city"><br>
+                <label for="state">State</label><input type="text" id="state"><br>
+                <label for="zipCode">Zip Code</label><input type="text" id="zipCode"><br>
+                <button id="next2">Next</button>
+            </form>
+            </div>
+            <div id="c" class="tab-pane">
+
+            </div>
+
+        </div>
+
+    </div>
+</main>
+</div>
+<footer>
+
+</footer>
+
+</body>
+
+<!-- jQuery first -- BEWARE OF THE SLIM VERSION FROM BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="code.js"></script>
+
+</html>
