@@ -36,7 +36,12 @@ form{
     margin-top:0 ;
 
 }
-
+div #b label{
+    width: 100%;
+}
+div #b input {
+    width: 300px;
+}
 .center {
     display: block;
     margin-left: auto;
