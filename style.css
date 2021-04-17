@@ -43,9 +43,14 @@ a:hover{
     color: mediumpurple;
     background: ghostwhite;
 }
+button{
+    background: red;
+    color: white;
+    width: 15%;
+}
 form{
     font-family: Arial;
-    color: red;
+    color: black;
     background: black;
     padding: 20px;
     border-radius: 10px;
