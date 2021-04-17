@@ -1,5 +1,6 @@
 body{
-background: sandybrown;
+    background-image: url("images/background.jpg");
+    background-size:100% ;
 }
 nav{
     display: flex;
@@ -14,31 +15,38 @@ header h1 {
     text-align: center;
     font-family: "Bauhaus 93";
     font-weight: bolder;
-    display: none;
+
 }
 header h2 {
     text-align: center;
     font-family: "Bauhaus 93";
     font-weight: bolder;
-    display: none;
 }
 header{
-    background: saddlebrown;
+    background: #330033;
     text-align: center;
     font-family: "Bauhaus 93";
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
 }
-
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
 a{
     color: red;
-    background: sandybrown;
+    background: black;
     margin: 0;
 }
 a:hover{
-    color: orange;
+    color: mediumpurple;
     background: ghostwhite;
 }
 form{
-    background: ghostwhite;
+    font-family: Arial;
+    color: red;
+    background: black;
     padding: 20px;
     border-radius: 10px;
     margin-top:0 ;
@@ -51,10 +59,7 @@ div #b input {
     width: 300px;
 }
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+    display: none;
 }
 #pizzaMaker{
     display: flex;
@@ -73,6 +78,14 @@ input{
     background: honeydew;
     border: black solid 1px;
 }
+footer{
+    text-align: center;
+    display: block;
+    background: black;
+    color: #FFFFFF;
+    bottom: 0;
+    width: 100%;
+}
 form{
     display: block;
     background: whitesmoke;
@@ -81,15 +94,11 @@ form{
     text-align: center;
 }
 
-@media (min-width: 600px) {
-header h1{
-    display: block;
-}
-header h2{
-    display: block;
-}
-.center{
-    width: 25%;
-}
+@media (min-width:600px) {
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
 
