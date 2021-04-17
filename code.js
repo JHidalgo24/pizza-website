@@ -3,14 +3,14 @@ $(document).ready(function () {
     $("form#pizzaInfo").on("submit", pizzaMaker)
     $("form#contactInfo ").on("submit", contactInfo)
     //changes to next page and changes tab clicked
-    $("button#next1").on("click",function () {
+    $("form#pizzaInfo").on("submit",function () {
         $("div#a").removeAttr("class").attr("class", "tab-pane")
         $("div#b").removeAttr("class").attr("class", "tab-pane active")
         $("a#a-tab").removeAttr("class").attr("class", "nav-link")
         $("a#b-tab").removeAttr("class").attr("class", "nav-link active")
     })
     //changes to next page and changes tab clicked
-    $("button#next2").on("click",function () {
+    $("form#contactInfo").on("submit",function () {
         $("div#b").removeAttr("class").attr("class", "tab-pane")
         $("div#c").removeAttr("class").attr("class", "tab-pane active")
         $("a#b-tab").removeAttr("class").attr("class", "nav-link")
