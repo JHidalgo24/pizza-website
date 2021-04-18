@@ -4,142 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freddy's Pizzeria</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <header>
     <br>
-   <section class="flexRow"><img src="images/headermoviing.gif" width="10%" class="center"><div class="wrapper"> <h1>Freddy Fazbear's Pizza</h1><img src="images/headerimage.png" width="25%" class="center" ><h2>Serving since 1983</h2> </div><img src="images/headermoviing.gif" width="10%" class="center"> </img> </section>
+    <section class="flexRow"><img src="images/headermoviing.gif" width="10%" class="center">
+        <div class="wrapper"><h1>Freddy Fazbear's Pizza</h1><img src="images/headerimage.png" width="25%"
+                                                                 class="center">
+            <h2>Serving since 1973</h2></div>
+        <img src="images/headermoviing.gif" width="10%" class="center"> </img></section>
     <br>
 </header>
 <div class="grid">
-<main>
-    <div class="container">
-        <nav>
-            <ul id="tabs" class="nav nav-tabs">
-                <li class="nav-item">
-                    <a href="#a" class="nav-link active" id="a-tab">Pizza Maker</a>
-                </li>
+    <main>
+        <div class="container">
+            <nav>
+                <ul id="tabs" class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#a" class="nav-link active" id="a-tab">Pizza Maker</a>
+                    </li>
 
-                <li class="nav-item" >
-                    <a href="#b" class="nav-link" id="b-tab">Location</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="#b" class="nav-link" id="b-tab">Location</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="#c" class="nav-link" id="c-tab">Checkout</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="#c" class="nav-link" id="c-tab">Checkout</a>
+                    </li>
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
 
-        <div class="tab-content">
-            <div id="a" class="tab-pane active">
+            <div class="tab-content">
+                <div id="a" class="tab-pane active">
 
-                <form id="pizzaInfo">
-                    <h4>Size</h4>
-                    <input type="radio" name="size" id="small" value="7" data-size="Small" required checked><label for="small">&nbsp;Small - $7</label><br>
-                    <input type="radio" name="size" id="medium" value="9" data-size="Medium" required><label for="small">&nbsp;Medium - $9</label><br>
-                    <input type="radio" name="size" id="large" value="12" data-size="Large" required > <label for="small">&nbsp;Large - $12</label><br>
+                    <form id="pizzaInfo">
+                        <h4>Size</h4>
+                        <input type="radio" name="size" id="small" value="7" data-size="Small" required checked><label
+                            for="small">&nbsp;Small - $7</label><br>
+                        <input type="radio" name="size" id="medium" value="9" data-size="Medium" required><label
+                            for="small">&nbsp;Medium - $9</label><br>
+                        <input type="radio" name="size" id="large" value="12" data-size="Large" required> <label
+                            for="small">&nbsp;Large - $12</label><br>
 
-                    <h4>Crust</h4>
-                        <input type="radio" name="crustType"  value="Thin" id="thin" required checked><label>&nbsp;Thin</label><br>
-                        <input type="radio" name="crustType" value="Pan" id="pan" required ><label>&nbsp;Pan</label><br>
-                        <input type="radio" name="crustType" value="Gluten Free" id="glutenFree" required ><label>&nbsp;Gluten Free</label><br>
+                        <h4>Crust</h4>
+                        <input type="radio" name="crustType" value="Thin" id="thin" required
+                               checked><label>&nbsp;Thin</label><br>
+                        <input type="radio" name="crustType" value="Pan" id="pan" required><label>&nbsp;Pan</label><br>
+                        <input type="radio" name="crustType" value="Gluten Free" id="glutenFree" required><label>&nbsp;Gluten
+                        Free</label><br>
 
-                    <h4>Veggies - $1 each</h4>
-                    <input type="checkbox" data-vprice="1" id="onions" value="Onions" name="veggies"><label for="onions">&nbsp;Onions</label><br>
-                    <input type="checkbox" data-vprice="1" id="blackOlives" value="Black olives" name="veggies"><label for="blackOlives">&nbsp;Black Olives</label><br>
-                    <input type="checkbox" data-vprice="1" id="greenPeppers" value="Green peppers" name="veggies"><label for="greenPeppers">&nbsp;Green Peppers</label><br>
-                    <input type="checkbox" data-vprice="1" id="pineapple" value="Pineapple" name="veggies"><label for="pineapple">&nbsp;Pineapple</label><br>
-                    <input type="checkbox" data-vprice="1" id="mushrooms" value="Mushrooms" name="veggies"><label for="mushrooms">&nbsp;Mushrooms</label><br>
-                    <input type="checkbox" data-vprice="1" id="greenOlives" value="Green olives" name="veggies"><label for="greenOlives">&nbsp;Green Olives</label><br>
-                    <input type="checkbox" data-vprice="1" id="tomatoes" value="Tomatoes" name="veggies"><label for="tomatoes">&nbsp;Tomatoes</label><br>
-                    <input type="checkbox" data-vprice="1" id="jalapenos" value="Jalapenos" name="veggies"><label for="jalapenos">&nbsp;Jalapenos</label><br>
-                    <h4>Meats - $1.50 each</h4>
-                        <input type="checkbox" data-mprice="1.5" id="pepperoni" value="Pepperoni" name="meat"><label for="pepperoni">&nbsp;Pepperoni</label><br>
-                        <input type="checkbox" data-mprice="1.5" id="italianSausage" value="Italian Sausage" name="meat"><label for="italianSausage">&nbsp;Italian Sausage</label><br>
-                        <input type="checkbox" data-mprice="1.5" id="bacon" value="Bacon" name="meat"><label for="bacon">&nbsp;Bacon</label><br>
-                        <input type="checkbox" data-mprice="1.5" id="chicken" value="Chicken" name="meat"><label for="chicken">&nbsp;Chicken</label><br>
-                        <input type="checkbox" data-mprice="1.5" id="salami" value="Salami" name="meat"><label for="salami">&nbsp;Salami</label><br>
-                        <input type="checkbox" data-mprice="1.5" id="hamburger" value="Hamburger" name="meat"><label for="hamburger">&nbsp;Hamburger</label><br>
-                        <input type="checkbox" data-mprice="1.5" id="canadianBacon" value="Canadian bacon" name="meat"><label for="canadianBacon">&nbsp;Canadian Bacon</label><br>
-                        <input type="checkbox" data-mprice="1.5" id="steak" value="Steak" name="meat"><label for="steak">&nbsp;Steak</label><br>
-                    <br>
-                    <button id="next1">Next</button>
-                    <br>
-                </form>
+                        <h4>Veggies - $1 each</h4>
 
-            </div>
-            <div id="b" class="tab-pane">
-            <form id="contactInfo">
-                <h1>Delivery Info</h1>
-                <h5>* are required</h5>
-                <h4>Contact Info</h4>
-                <label for="fName">First Name *</label><input type="text" id="fName" required><br>
-                <label for="lName">Last Name  *</label><input type="text" id="lName" required><br>
-                <label for="phoneNumber">Phone Number *</label><input type="text" id="phoneNumber" required> <br>
+                        <input type="checkbox" data-vprice="1" id="onions" value="Onions" name="veggies"><label
+                            for="onions">&nbsp;Onions</label><br>
+                        <input type="checkbox" data-vprice="1" id="blackOlives" value="Black olives"
+                               name="veggies"><label for="blackOlives">&nbsp;Black Olives</label><br>
+                        <input type="checkbox" data-vprice="1" id="greenPeppers" value="Green peppers"
+                               name="veggies"><label for="greenPeppers">&nbsp;Green Peppers</label><br>
+                        <input type="checkbox" data-vprice="1" id="pineapple" value="Pineapple" name="veggies"><label
+                            for="pineapple">&nbsp;Pineapple</label><br>
+                        <input type="checkbox" data-vprice="1" id="mushrooms" value="Mushrooms" name="veggies"><label
+                            for="mushrooms">&nbsp;Mushrooms</label><br>
+                        <input type="checkbox" data-vprice="1" id="greenOlives" value="Green olives"
+                               name="veggies"><label for="greenOlives">&nbsp;Green Olives</label><br>
+                        <input type="checkbox" data-vprice="1" id="tomatoes" value="Tomatoes" name="veggies"><label
+                            for="tomatoes">&nbsp;Tomatoes</label><br>
+                        <input type="checkbox" data-vprice="1" id="jalapenos" value="Jalapenos" name="veggies"><label
+                            for="jalapenos">&nbsp;Jalapenos</label><br>
+                        <h4>Meats - $1.50 each</h4>
+                        <input type="checkbox" data-mprice="1.5" id="pepperoni" value="Pepperoni" name="meat"><label
+                            for="pepperoni">&nbsp;Pepperoni</label><br>
+                        <input type="checkbox" data-mprice="1.5" id="italianSausage" value="Italian Sausage"
+                               name="meat"><label for="italianSausage">&nbsp;Italian Sausage</label><br>
+                        <input type="checkbox" data-mprice="1.5" id="bacon" value="Bacon" name="meat"><label
+                            for="bacon">&nbsp;Bacon</label><br>
+                        <input type="checkbox" data-mprice="1.5" id="chicken" value="Chicken" name="meat"><label
+                            for="chicken">&nbsp;Chicken</label><br>
+                        <input type="checkbox" data-mprice="1.5" id="salami" value="Salami" name="meat"><label
+                            for="salami">&nbsp;Salami</label><br>
+                        <input type="checkbox" data-mprice="1.5" id="hamburger" value="Hamburger" name="meat"><label
+                            for="hamburger">&nbsp;Hamburger</label><br>
+                        <input type="checkbox" data-mprice="1.5" id="canadianBacon" value="Canadian bacon"
+                               name="meat"><label for="canadianBacon">&nbsp;Canadian Bacon</label><br>
+                        <input type="checkbox" data-mprice="1.5" id="steak" value="Steak" name="meat"><label
+                            for="steak">&nbsp;Steak</label><br>
+                        <br>
+                        <button id="next1">Next</button>
+                        <br>
+                    </form>
 
-                <h4>Delivery Location</h4>
-                <label for="address">Address *</label><input type="text" id="address" required><br>
-                <label for="apt">Apt/Suite # </label><input type="text" id="apt"><br>
-                <label for="city">City *</label><input type="text" id="city"required><br>
-                <label for="state">State *</label><input type="text" id="state"required><br>
-                <label for="zipCode">Zip Code *</label><input type="text" id="zipCode"required><br>
-                <br>
-                <button id="next2" >Next</button>
-                <br>
-            </form>
-            </div>
-            <div id="c" class="tab-pane">
-                <form id="output">
+                </div>
+                <div id="b" class="tab-pane">
+                    <form id="contactInfo">
+                        <h1>Delivery Info</h1>
+                        <h5>* are required</h5>
+                        <h4>Contact Info</h4>
+                        <label for="fName">First Name *</label><input type="text" id="fName" required><br>
+                        <label for="lName">Last Name *</label><input type="text" id="lName" required><br>
+                        <label for="phoneNumber">Phone Number *</label><input type="text" id="phoneNumber" required>
+                        <br>
 
-                    <h2>Contact Details</h2>
-                    <div class="details">
-                    <p>Name: <span id="nameOutput"></span></p>
-                    <p>Address: <span id="addressOutput"></span> </p>
-                    <p>Phone: <span id="phoneOutput"></span></p>
-                    </div>
+                        <h4>Delivery Location</h4>
+                        <label for="address">Address *</label><input type="text" id="address" required><br>
+                        <label for="apt">Apt/Suite # </label><input type="text" id="apt"><br>
+                        <label for="city">City *</label><input type="text" id="city" required><br>
+                        <label for="state">State *</label><input type="text" id="state" required><br>
+                        <label for="zipCode">Zip Code *</label><input type="text" id="zipCode" required><br>
+                        <br>
+                        <button id="next2">Next</button>
+                        <br>
+                    </form>
+                </div>
+                <div id="c" class="tab-pane">
+                    <form id="output">
 
-                    <h2>Pizza Details</h2>
-                    <div class="details">
-                    <p>Size: <span id="pizzaSizeOutput"></span></p>
-                    <p>Crust: <span id="crustOutput"></span> </p>
-                    <p>Veggies on Pizza: <span id="veggieOutput"></span></p>
-                    <p>Meats on Pizza: <span id="meatOutput"></span></p>
-                    </div>
+                        <h2>Contact Details</h2>
+                        <div class="details">
+                            <p>Name: <span id="nameOutput"></span></p>
+                            <p>Address: <span id="addressOutput"></span></p>
+                            <p>Phone: <span id="phoneOutput"></span></p>
+                        </div>
 
-                    <h2>Cost Details</h2>
-                    <div class="details">
-                    <p>Subtotal: <span id="subtotalOutput"></span></p>
-                    <p>Tax: <span id="taxOutput"></span> </p>
-                    <p>Delivery Fee: <span id="deliveryOutput"></span></p>
-                    <p>Grand Total: <span id="grandTotalOutput"></span></p>
-                    </div>
+                        <h2>Pizza Details</h2>
+                        <div class="details">
+                            <p>Size: <span id="pizzaSizeOutput"></span></p>
+                            <p>Crust: <span id="crustOutput"></span></p>
+                            <p>Veggies on Pizza: <span id="veggieOutput"></span></p>
+                            <p>Meats on Pizza: <span id="meatOutput"></span></p>
+                        </div>
 
-                    <img src="images/purpleMan.gif" width="10%" class="center">
-                </form>
+                        <h2>Cost Details</h2>
+                        <div class="details">
+                            <p>Subtotal: <span id="subtotalOutput"></span></p>
+                            <p>Tax: <span id="taxOutput"></span></p>
+                            <p>Delivery Fee: <span id="deliveryOutput"></span></p>
+                            <p>Grand Total: <span id="grandTotalOutput"></span></p>
+                        </div>
+
+                        <img src="images/purpleMan.gif" width="10%" class="center">
+                    </form>
+                </div>
+
             </div>
 
         </div>
-
-    </div>
-
-</main>
+    </main>
 </div>
 
 <footer>
     <br>
-<p>I do not own the rights to the FNAF Franchise <br>
-   This is a parody please don't sue me
-</p>
+    <p>I do not own the rights to the FNAF Franchise <br>
+        This is a parody please don't sue me
+    </p>
     <p>Totally Legit Freddy Fazbear's Pizza &copy;</p>
     <br>
 </footer>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

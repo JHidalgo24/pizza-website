@@ -3,14 +3,14 @@ $(document).ready(function () {
     $("form#pizzaInfo").on("submit", pizzaMaker)
     $("form#contactInfo ").on("submit", contactInfo)
     //changes to next page and changes tab clicked
-    $("form#pizzaInfo").on("submit",function () {
+    $("form#pizzaInfo").on("submit", function () {
         $("div#a").removeAttr("class").attr("class", "tab-pane")
         $("div#b").removeAttr("class").attr("class", "tab-pane active")
         $("a#a-tab").removeAttr("class").attr("class", "nav-link")
         $("a#b-tab").removeAttr("class").attr("class", "nav-link active")
     })
     //changes to next page and changes tab clicked
-    $("form#contactInfo").on("submit",function () {
+    $("form#contactInfo").on("submit", function () {
         $("div#b").removeAttr("class").attr("class", "tab-pane")
         $("div#c").removeAttr("class").attr("class", "tab-pane active")
         $("a#b-tab").removeAttr("class").attr("class", "nav-link")
@@ -18,7 +18,7 @@ $(document).ready(function () {
     })
 });
 
-function showTab(event){
+function showTab(event) {
     event.preventDefault();
     $(this).tab("show");
 }
@@ -29,10 +29,10 @@ function pizzaMaker(event) {
     event.preventDefault();
 
     //gets size picked and price
-    let sizePrice = parseFloat( $("input[name=size]:checked").val());
+    let sizePrice = parseFloat($("input[name=size]:checked").val());
     let sizedPicked = $("input[name=size]:checked").data("size");
     //gets crust type
-    let crustPicked =$("input[name=crustType]:checked").val();
+    let crustPicked = $("input[name=crustType]:checked").val();
     //get veggies selected and store in a string
     let veggieCheckedBoxes = $("input[name=veggies]:checked");
     // Declare a variable to hold the subtotal of veggies
@@ -79,17 +79,17 @@ function pizzaMaker(event) {
     //meats picked output
     $("#meatOutput").text(meatsPicked);
     //output Subtotal
-    $("#subtotalOutput").text('$'+subTotal.toFixed(2));
+    $("#subtotalOutput").text('$' + subTotal.toFixed(2));
     //output tax
-    $("#taxOutput").text('$'+tax.toFixed(2));
+    $("#taxOutput").text('$' + tax.toFixed(2));
     //output delivery fee
-    $("#deliveryOutput").text('$'+deliveryFee);
+    $("#deliveryOutput").text('$' + deliveryFee);
     //output grandTotal
-    $("#grandTotalOutput").text('$'+grandTotal.toFixed(2));
-
+    $("#grandTotalOutput").text('$' + grandTotal.toFixed(2));
 
 
 }
+
 function contactInfo(event) {
     event.preventDefault();
     //get first name
@@ -99,7 +99,7 @@ function contactInfo(event) {
     //get number
     let phoneNumber = $("input#phoneNumber").val();
     //get address
-    let address =  $("input#address").val();
+    let address = $("input#address").val();
     //apt number
     let aptNumber = $("input#apt").val();
     //get city

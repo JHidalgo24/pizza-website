@@ -1,28 +1,33 @@
-body{
+body {
     background-image: url("images/background.jpg");
-    background-size:100% ;
+    background-size: 100%;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-direction: column;
 }
+
 header h1 {
     text-align: center;
     font-family: "Bauhaus 93";
     font-weight: bolder;
 
 }
+
 header h2 {
     text-align: center;
     font-family: "Bauhaus 93";
     font-weight: bolder;
 }
-header{
+
+header {
     background: #330033;
     text-align: center;
     font-family: "Bauhaus 93";
@@ -30,60 +35,72 @@ header{
     display: flex;
     flex-direction: column;
 }
-.flexRow{
+
+.flexRow {
     display: flex;
     flex-direction: row;
 }
-a{
+
+a {
     color: red;
     background: black;
     margin: 0;
 }
-a:hover{
+
+a:hover {
     color: mediumpurple;
     background: ghostwhite;
 }
-button{
+
+button {
     background: red;
     color: white;
     width: 15%;
 }
-form{
+
+form {
     font-family: Arial;
     color: black;
     background: black;
     padding: 20px;
     border-radius: 10px;
-    margin-top:0 ;
+    margin-top: 0;
 
 }
-div #b label{
+
+div #b label {
     width: 100%;
 }
+
 div #b input {
     width: 300px;
 }
+
 .center {
     display: none;
 }
-#pizzaMaker{
+
+#pizzaMaker {
     display: flex;
     flex-direction: column;
 }
-.details{
+
+.details {
     border: black 5px solid;
     margin-bottom: 10px;
     padding: 10px;
 }
-.details p{
+
+.details p {
     text-align: left;
 }
 
-input{
+input {
     background: honeydew;
     border: black solid 1px;
 }
-footer{
+
+footer {
     text-align: center;
     display: block;
     background: black;
@@ -91,15 +108,17 @@ footer{
     bottom: 0;
     width: 100%;
 }
-form{
+
+form {
     display: block;
     background: whitesmoke;
 }
-#output h2{
+
+#output h2 {
     text-align: center;
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
     .center {
         margin-left: auto;
         margin-right: auto;
